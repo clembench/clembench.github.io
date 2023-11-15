@@ -31,7 +31,7 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/clembench.github.io/leaderboard.html">Leaderboard</a></div>
+        <div class="trigger"></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -41,187 +41,30 @@ layout: post
 title:  "Welcome to Jekyll!"
 date:   2023-11-02 18:00:23 +0100
 categories: jekyll update -->
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+    }
 
-<h1 id="clembench-a-framework-for-the-systematic-evaluation-of-chat-optimized-language-models-as-conversational-agents">clembench: A Framework for the Systematic Evaluation of Chat-Optimized Language Models as Conversational Agents</h1>
+    table {
+        margin-left: --25vw;
+        margin-right: auto;
+    }
 
-<blockquote>
-  <p>Chalamalasetti, K., Götze, J., Hakimov, S., Madureira, B., Sadler, P., &amp; Schlangen, D. (2023). clembench: Using Game Play to Evaluate Chat-Optimized Language Models as Conversational Agents. <a href="https://doi.org/10.48550/arXiv.2305.13455">PDF</a></p>
-</blockquote>
+    body gradio-app {
+        display: flex;
+        width: 90vw; /* Make it 100% of the viewport width */
+        max-width: 90vw; /* Set maximum width to 1920 pixels */
+        min-width: 90vw;
+        margin: 0 auto; /* Center the module horizontally */
+        margin-left: -25vw;
+    }
+</style>
 
-<p>Recent work has proposed a methodology for
-the systematic evaluation of “Situated Language Understanding Agents”—agents that
-operate in rich linguistic and non-linguistic
-contexts—through testing them in carefully
-constructed interactive settings. Other recent
-work has argued that Large Language Models
-(LLMs), if suitably set up, can be understood
-as (simulators of) such agents. A connection
-suggests itself, which this paper explores: Can
-LLMs be evaluated meaningfully by exposing
-them to constrained game-like settings that are
-built to challenge specific capabilities?</p>
+<script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/4.1.2/gradio.js"></script>
 
-<p>As a
-proof of concept, this paper investigates five
-interaction settings, showing that current cLLMs (chat-optimized Large Language Models, “clems”) are, 
-to an extent, capable of
-following game-play instructions. Both this
-capability and the quality of the game play,
-measured by how well the objectives of the
-different games are met, follows the development cycle, with newer models generally performing better. 
-The metrics even for the comparatively simple example games are far from
-being saturated, suggesting that the proposed
-instrument will remain to have diagnostic value.</p>
-
-<h1 id="clems">CLEMS</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">model</th>
-      <th style="text-align: left">here</th>
-      <th style="text-align: left">version</th>
-      <th style="text-align: left">parameters</th>
-      <th style="text-align: left">train datasize</th>
-      <th style="text-align: left">instruction tuned</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">luminous-supreme</td>
-      <td style="text-align: left">lm</td>
-      <td style="text-align: left">2023-01</td>
-      <td style="text-align: left">70</td>
-      <td style="text-align: left">588</td>
-      <td style="text-align: left">Y</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">claude</td>
-      <td style="text-align: left">cl</td>
-      <td style="text-align: left">v1.3</td>
-      <td style="text-align: left">52</td>
-      <td style="text-align: left">1.4k</td>
-      <td style="text-align: left">Y</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">koala13-b</td>
-      <td style="text-align: left">ko</td>
-      <td style="text-align: left">2023-06</td>
-      <td style="text-align: left">13</td>
-      <td style="text-align: left">n/a</td>
-      <td style="text-align: left">Y</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">falcon-40b-instruct</td>
-      <td style="text-align: left">flc</td>
-      <td style="text-align: left">2023-06</td>
-      <td style="text-align: left">40</td>
-      <td style="text-align: left">600</td>
-      <td style="text-align: left">Y</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">open-assistant-12b</td>
-      <td style="text-align: left">ost</td>
-      <td style="text-align: left">2023-06</td>
-      <td style="text-align: left">12</td>
-      <td style="text-align: left">400</td>
-      <td style="text-align: left">Y</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">vicuna-13b</td>
-      <td style="text-align: left">vcn</td>
-      <td style="text-align: left">2023-06</td>
-      <td style="text-align: left">13</td>
-      <td style="text-align: left">1.4k</td>
-      <td style="text-align: left">Y</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">text-davinci</td>
-      <td style="text-align: left">3</td>
-      <td style="text-align: left">003</td>
-      <td style="text-align: left">175</td>
-      <td style="text-align: left">300</td>
-      <td style="text-align: left">Y</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">gpt-3.5-turbo</td>
-      <td style="text-align: left">3.5</td>
-      <td style="text-align: left">0301</td>
-      <td style="text-align: left">n/a</td>
-      <td style="text-align: left">n/a</td>
-      <td style="text-align: left">Y</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">gpt-4</td>
-      <td style="text-align: left">4</td>
-      <td style="text-align: left">0314</td>
-      <td style="text-align: left">n/a</td>
-      <td style="text-align: left">n/a</td>
-      <td style="text-align: left">Y</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>The evaluated models with the details about
-number of parameters in billions, trained data size
-(tokens) in billions, and whether they were instruction tuned. Y: yes, n/a: publicly not available.</p>
-
-<h1 id="interaction-settings">Interaction Settings</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">interaction setting</th>
-      <th style="text-align: left">description</th>
-      <th style="text-align: left">anchoring process</th>
-      <th style="text-align: left">representational domain</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">taboo</td>
-      <td style="text-align: left">A game where one player tries to get the other player to guess a word without using certain ‘taboo’ words in their clues.</td>
-      <td style="text-align: left">incremental learning/processing</td>
-      <td style="text-align: left">language model/world model</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">wordle</td>
-      <td style="text-align: left">A game where one player thinks of a word and the other player tries to guess it by suggesting words that are similar or related.</td>
-      <td style="text-align: left">incremental learning/processing</td>
-      <td style="text-align: left">language model/world model</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">wordle_withclue</td>
-      <td style="text-align: left">A variant of Wordle where the guesser is given a clue to help them guess the target word.</td>
-      <td style="text-align: left">incremental learning/processing</td>
-      <td style="text-align: left">language model/world model</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">wordle_withcritic</td>
-      <td style="text-align: left">A variant of Wordle where the guesser’s suggestions are evaluated by a third player, who provides feedback on their accuracy.</td>
-      <td style="text-align: left">incremental learning/processing</td>
-      <td style="text-align: left">language model/world model</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">imagegame</td>
-      <td style="text-align: left">A game where one player draws a picture and the other player tries to guess what it represents.</td>
-      <td style="text-align: left">multimodal grounding</td>
-      <td style="text-align: left">situation model</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">referencegame</td>
-      <td style="text-align: left">A game where one player describes an object and the other player tries to identify it based on the description.</td>
-      <td style="text-align: left">multimodal grounding</td>
-      <td style="text-align: left">situation model</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">privateshared</td>
-      <td style="text-align: left">A game where two players are given different pieces of information and must work together to solve a problem.</td>
-      <td style="text-align: left">conversational grounding</td>
-      <td style="text-align: left">discourse model</td>
-    </tr>
-  </tbody>
-</table>
+<gradio-app src="https://koshti10-clem-leaderboard.hf.space"></gradio-app>
 
 </div>
 
