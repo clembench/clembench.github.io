@@ -12,7 +12,7 @@ title: Leaderboard
 
 # Leaderboard
 
-{% include_relative _posts/output_markdowns/main_leaderboard.md %}
+<!-- {% include_relative _posts/output_markdowns/main_leaderboard.md %}
 
 For each model (pairing), 
 - <b>Played</b> - shows how many games were played to completion, an indicator of rule-following capabilities. 
@@ -22,5 +22,11 @@ For each model (pairing),
 
 
 # Plots
-![Plot](/plots/lines.jpg)
+![Plot](/plots/lines.jpg) -->
 
+<script
+	type="module"
+	src="https://gradio.s3-us-west-2.amazonaws.com/4.1.2/gradio.js"
+></script>
+
+<gradio-app src="https://koshti10-clem-leaderboard.hf.space"></gradio-app>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>clem-benchmark | Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="clem-benchmark" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+<link rel="canonical" href="http://localhost:4000/temp2.github.io/" />
+<meta property="og:url" content="http://localhost:4000/temp2.github.io/" />
+<meta property="og:site_name" content="clem-benchmark" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="clem-benchmark" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","headline":"clem-benchmark","name":"clem-benchmark","url":"http://localhost:4000/temp2.github.io/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/temp2.github.io/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/temp2.github.io/feed.xml" title="clem-benchmark" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/temp2.github.io/">clem-benchmark</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/temp2.github.io/leaderboard.html">Leaderboard</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="home"><!-- ---
+layout: post
+title:  "Welcome to Jekyll!"
+date:   2023-11-02 18:00:23 +0100
+categories: jekyll update -->
+
+<h1 id="clembench-a-framework-for-the-systematic-evaluation-of-chat-optimized-language-models-as-conversational-agents">clembench: A Framework for the Systematic Evaluation of Chat-Optimized Language Models as Conversational Agents</h1>
+
+<blockquote>
+  <p>Chalamalasetti, K., Götze, J., Hakimov, S., Madureira, B., Sadler, P., &amp; Schlangen, D. (2023). clembench: Using Game Play to Evaluate Chat-Optimized Language Models as Conversational Agents. <a href="https://doi.org/10.48550/arXiv.2305.13455">PDF</a></p>
+</blockquote>
+
+<p>Recent work has proposed a methodology for
+the systematic evaluation of “Situated Language Understanding Agents”—agents that
+operate in rich linguistic and non-linguistic
+contexts—through testing them in carefully
+constructed interactive settings. Other recent
+work has argued that Large Language Models
+(LLMs), if suitably set up, can be understood
+as (simulators of) such agents. A connection
+suggests itself, which this paper explores: Can
+LLMs be evaluated meaningfully by exposing
+them to constrained game-like settings that are
+built to challenge specific capabilities?</p>
+
+<p>As a
+proof of concept, this paper investigates five
+interaction settings, showing that current cLLMs (chat-optimized Large Language Models, “clems”) are, 
+to an extent, capable of
+following game-play instructions. Both this
+capability and the quality of the game play,
+measured by how well the objectives of the
+different games are met, follows the development cycle, with newer models generally performing better. 
+The metrics even for the comparatively simple example games are far from
+being saturated, suggesting that the proposed
+instrument will remain to have diagnostic value.</p>
+
+<h1 id="clems">CLEMS</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">model</th>
+      <th style="text-align: left">here</th>
+      <th style="text-align: left">version</th>
+      <th style="text-align: left">parameters</th>
+      <th style="text-align: left">train datasize</th>
+      <th style="text-align: left">instruction tuned</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">luminous-supreme</td>
+      <td style="text-align: left">lm</td>
+      <td style="text-align: left">2023-01</td>
+      <td style="text-align: left">70</td>
+      <td style="text-align: left">588</td>
+      <td style="text-align: left">Y</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">claude</td>
+      <td style="text-align: left">cl</td>
+      <td style="text-align: left">v1.3</td>
+      <td style="text-align: left">52</td>
+      <td style="text-align: left">1.4k</td>
+      <td style="text-align: left">Y</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">koala13-b</td>
+      <td style="text-align: left">ko</td>
+      <td style="text-align: left">2023-06</td>
+      <td style="text-align: left">13</td>
+      <td style="text-align: left">n/a</td>
+      <td style="text-align: left">Y</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">falcon-40b-instruct</td>
+      <td style="text-align: left">flc</td>
+      <td style="text-align: left">2023-06</td>
+      <td style="text-align: left">40</td>
+      <td style="text-align: left">600</td>
+      <td style="text-align: left">Y</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">open-assistant-12b</td>
+      <td style="text-align: left">ost</td>
+      <td style="text-align: left">2023-06</td>
+      <td style="text-align: left">12</td>
+      <td style="text-align: left">400</td>
+      <td style="text-align: left">Y</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">vicuna-13b</td>
+      <td style="text-align: left">vcn</td>
+      <td style="text-align: left">2023-06</td>
+      <td style="text-align: left">13</td>
+      <td style="text-align: left">1.4k</td>
+      <td style="text-align: left">Y</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">text-davinci</td>
+      <td style="text-align: left">3</td>
+      <td style="text-align: left">003</td>
+      <td style="text-align: left">175</td>
+      <td style="text-align: left">300</td>
+      <td style="text-align: left">Y</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">gpt-3.5-turbo</td>
+      <td style="text-align: left">3.5</td>
+      <td style="text-align: left">0301</td>
+      <td style="text-align: left">n/a</td>
+      <td style="text-align: left">n/a</td>
+      <td style="text-align: left">Y</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">gpt-4</td>
+      <td style="text-align: left">4</td>
+      <td style="text-align: left">0314</td>
+      <td style="text-align: left">n/a</td>
+      <td style="text-align: left">n/a</td>
+      <td style="text-align: left">Y</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The evaluated models with the details about
+number of parameters in billions, trained data size
+(tokens) in billions, and whether they were instruction tuned. Y: yes, n/a: publicly not available.</p>
+
+<h1 id="interaction-settings">Interaction Settings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">interaction setting</th>
+      <th style="text-align: left">description</th>
+      <th style="text-align: left">anchoring process</th>
+      <th style="text-align: left">representational domain</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">taboo</td>
+      <td style="text-align: left">A game where one player tries to get the other player to guess a word without using certain ‘taboo’ words in their clues.</td>
+      <td style="text-align: left">incremental learning/processing</td>
+      <td style="text-align: left">language model/world model</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">wordle</td>
+      <td style="text-align: left">A game where one player thinks of a word and the other player tries to guess it by suggesting words that are similar or related.</td>
+      <td style="text-align: left">incremental learning/processing</td>
+      <td style="text-align: left">language model/world model</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">wordle_withclue</td>
+      <td style="text-align: left">A variant of Wordle where the guesser is given a clue to help them guess the target word.</td>
+      <td style="text-align: left">incremental learning/processing</td>
+      <td style="text-align: left">language model/world model</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">wordle_withcritic</td>
+      <td style="text-align: left">A variant of Wordle where the guesser’s suggestions are evaluated by a third player, who provides feedback on their accuracy.</td>
+      <td style="text-align: left">incremental learning/processing</td>
+      <td style="text-align: left">language model/world model</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">imagegame</td>
+      <td style="text-align: left">A game where one player draws a picture and the other player tries to guess what it represents.</td>
+      <td style="text-align: left">multimodal grounding</td>
+      <td style="text-align: left">situation model</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">referencegame</td>
+      <td style="text-align: left">A game where one player describes an object and the other player tries to identify it based on the description.</td>
+      <td style="text-align: left">multimodal grounding</td>
+      <td style="text-align: left">situation model</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">privateshared</td>
+      <td style="text-align: left">A game where two players are given different pieces of information and must work together to solve a problem.</td>
+      <td style="text-align: left">conversational grounding</td>
+      <td style="text-align: left">discourse model</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="leaderboard-by-individual-interaction-setting">Leaderboard by Individual Interaction Setting</h1>
+
+<h2 class="post-list-heading">Posts</h2>
+    <ul class="post-list"><li><span class="post-meta">Jun 1, 2023</span>
+        <h3>
+          <a class="post-link" href="/temp2.github.io/2023/06/01/wordle.html">
+            Wordle
+          </a>
+        </h3><style>
+    table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+
+<h1 id="a-word-guessing-game-based-on-clues-wordle">A Word-Guessing Game Based on Clues: wordle</h1>
+
+<p>The popular word guessing game ``Wordle’’ gained global attention, in which players are challenged to guess a five-letter word in six attempts.  After each guess, the player receives feedback indicating which letters are in the correct position, which letters are correct but in the wrong position, and which letters are incorrect to help them strategise their next guess. The objective of the game is to guess the target word using the fewest possible guesses, and the game ends when the player guesses correctly or exhausts all six attempts.</p>
+
+</li><li><span class="post-meta">Jun 1, 2023</span>
+        <h3>
+          <a class="post-link" href="/temp2.github.io/2023/06/01/taboo.html">
+            Taboo
+          </a>
+        </h3><style>
+    table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+
+<h1 id="a-simple-word-game-taboo">A Simple Word Game: taboo</h1>
+
+<p>In this game one player (the Describer) describes a target word for another player to guess (Guesser).
+The Describer must explain the target word concept without using neither the word itself, nor a part of the word.
+For example, when the target word is <em>flashlight</em>, the Describer cannot use the words <em>light</em> or <em>flash</em>.
+After each incorrect guess by the Guesser, the Describer can add to his description.
+The game ends when the Guesser guesses correctly or a maximum number of turns has been reached.</p>
+
+</li><li><span class="post-meta">Jun 1, 2023</span>
+        <h3>
+          <a class="post-link" href="/temp2.github.io/2023/06/01/reference.html">
+            Reference
+          </a>
+        </h3><style>
+    table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+
+<h1 id="drawing-instruction-giving-and-following-reference">Drawing Instruction Giving and Following: reference</h1>
+
+<p>Each instance of this game includes three grids where one is the target and the remaining two are distractor grids, which Player A (Instruction Giver) needs to generate a referring expression that describes only the target grid and Player B (Instruction Follower) takes into account the given referring expression and expected to guess which of the given three grids is the target grid.</p>
+
+</li><li><span class="post-meta">Jun 1, 2023</span>
+        <h3>
+          <a class="post-link" href="/temp2.github.io/2023/06/01/pvsh.html">
+            Scorekeeping
+          </a>
+        </h3><style>
+    table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+
+<h1 id="scorekeeping-private-and-shared">Scorekeeping: private and shared</h1>
+
+<p>In an interaction, one device of the <em>conversational grounding</em> anchoring process is that participants coordinate what is private knowledge and what information has already been shared in previous turns. After each utterance, the status of novel information should be updated from private to shared in both agents’ discourse models. This is how they do <em>scorekeeping</em>, i.e. keeping track of the <em>common ground</em> which is built incrementally, turn by turn.</p>
+
+</li><li><span class="post-meta">Jun 1, 2023</span>
+        <h3>
+          <a class="post-link" href="/temp2.github.io/2023/06/01/image.html">
+            Image Game
+          </a>
+        </h3><style>
+    table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+
+<h1 id="an-ascii-picture-reference-game-images">An ASCII Picture Reference Game: images</h1>
+
+<p>In this game, the task is to draw a simple grid where Player A (Instruction Giver) needs to instruct Player B (Instruction Follower) how to draw, starting from an empty grid.</p>
+
+</li></ul>
+
+    <p class="rss-subscribe">subscribe <a href="/temp2.github.io/feed.xml">via RSS</a></p></div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+    <data class="u-url" href="/temp2.github.io/"></data>
+  
+    <div class="wrapper">
+  
+      <div class="footer-col-wrapper">
+        <div class="footer-col footer-col-1">
+          <p> An open-source benchmark for evaluating chat-optimized language models as conversational agents through game play. </p>
+        </div>
+
+        <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/clembench/clembench"><svg class="svg-icon"><use xlink:href="/temp2.github.io/assets/minima-social-icons.svg#github"></use></svg> <span class="username">clem-bench</span></a></li></ul>
+  </div>
+  
+        <div class="footer-col footer-col-3">
+            <ul class="contact-list">
+            <li class="p-name"></li><li><a class="u-email" href="https://clp.ling.uni-potsdam.de/">Foundations of computational linguistics, Potsdam</a></li></ul>
+        </div>
+      </div>
+    
+    </div>
+  
+  </footer></body>
+
+</html>

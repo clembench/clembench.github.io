@@ -1,0 +1,15 @@
+,metric,value
+18654,Middle-Accuracy,0.8
+18655,Accuracy,0.8791666666666667
+18656,Kappa,0.7583333333333333
+18657,Truncated Kappa,0.7583333333333333
+18658,Slot-Filling-Accuracy,0.9333333333333333
+18659,Main Score,83.67816091954022
+18660,Aborted,0.0
+18661,Lose,1.0
+18662,Success,0.0
+18663,Request Count,255.0
+18664,Parsed Request Count,255.0
+18665,Violated Request Count,0.0
+18666,Request Success Ratio,1.0
+34097,Played,1.0

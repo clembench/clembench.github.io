@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Reference | clem-benchmark</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Reference" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Drawing Instruction Giving and Following: reference Each instance of this game includes three grids where one is the target and the remaining two are distractor grids, which Player A (Instruction Giver) needs to generate a referring expression that describes only the target grid and Player B (Instruction Follower) takes into account the given referring expression and expected to guess which of the given three grids is the target grid." />
+<meta property="og:description" content="Drawing Instruction Giving and Following: reference Each instance of this game includes three grids where one is the target and the remaining two are distractor grids, which Player A (Instruction Giver) needs to generate a referring expression that describes only the target grid and Player B (Instruction Follower) takes into account the given referring expression and expected to guess which of the given three grids is the target grid." />
+<link rel="canonical" href="http://localhost:4000/temp2.github.io/2023/06/01/reference.html" />
+<meta property="og:url" content="http://localhost:4000/temp2.github.io/2023/06/01/reference.html" />
+<meta property="og:site_name" content="clem-benchmark" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-06-01T00:00:00+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Reference" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-06-01T00:00:00+02:00","datePublished":"2023-06-01T00:00:00+02:00","description":"Drawing Instruction Giving and Following: reference Each instance of this game includes three grids where one is the target and the remaining two are distractor grids, which Player A (Instruction Giver) needs to generate a referring expression that describes only the target grid and Player B (Instruction Follower) takes into account the given referring expression and expected to guess which of the given three grids is the target grid.","headline":"Reference","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/temp2.github.io/2023/06/01/reference.html"},"url":"http://localhost:4000/temp2.github.io/2023/06/01/reference.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/temp2.github.io/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/temp2.github.io/feed.xml" title="clem-benchmark" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/temp2.github.io/">clem-benchmark</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/temp2.github.io/leaderboard.html">Leaderboard</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <style>
+    table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+
+<h1 id="drawing-instruction-giving-and-following-reference">Drawing Instruction Giving and Following: reference</h1>
+
+<p>Each instance of this game includes three grids where one is the target and the remaining two are distractor grids, which Player A (Instruction Giver) needs to generate a referring expression that describes only the target grid and Player B (Instruction Follower) takes into account the given referring expression and expected to guess which of the given three grids is the target grid.</p>
+
+<!--end_excerpt-->
+
+<p>The Game Master selects a target and two distractor grids and instructs the Player A to generate a referring expression that uniquely describes the target grid and differentiates it from the distractors. There is a history of work on referring expression generation and the topic has recently received new attention in the context of neural learners. The Game Master then provides the same three grids and the referring expression from Player A to Player B. The three grids are numbered such as <em>first</em>, <em>second</em>, and <em>third</em> and the order of grids are randomly shuffled for Player B. Player B generates a single expression that should refer to the number of the target grid that matches the given expression. The game is played for a single turn.</p>
+
+<h1 id="leaderboard">Leaderboard</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Models</th>
+      <th style="text-align: left">Experiment</th>
+      <th style="text-align: right">Aborted</th>
+      <th style="text-align: right">Lose</th>
+      <th style="text-align: left">Main Score</th>
+      <th style="text-align: left">Played</th>
+      <th style="text-align: left">Success</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">3–3</td>
+      <td style="text-align: left">0_hard_grids_edit_distance_2</td>
+      <td style="text-align: right">10</td>
+      <td style="text-align: right">65</td>
+      <td style="text-align: left">27.77777777777778</td>
+      <td style="text-align: left">90.0</td>
+      <td style="text-align: left">25.0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">1_hard_grids_edit_distance_4</td>
+      <td style="text-align: right">25</td>
+      <td style="text-align: right">40</td>
+      <td style="text-align: left">46.66666666666666</td>
+      <td style="text-align: left">75.0</td>
+      <td style="text-align: left">35.0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">3.5–3.5</td>
+      <td style="text-align: left">0_hard_grids_edit_distance_2</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">55</td>
+      <td style="text-align: left">45.0</td>
+      <td style="text-align: left"><strong>100.0</strong></td>
+      <td style="text-align: left">45.0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">1_hard_grids_edit_distance_4</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">35</td>
+      <td style="text-align: left">65.0</td>
+      <td style="text-align: left"><strong>100.0</strong></td>
+      <td style="text-align: left">65.0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">3.5–4</td>
+      <td style="text-align: left">0_hard_grids_edit_distance_2</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">50</td>
+      <td style="text-align: left">50.0</td>
+      <td style="text-align: left"><strong>100.0</strong></td>
+      <td style="text-align: left">50.0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">1_hard_grids_edit_distance_4</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">35</td>
+      <td style="text-align: left">65.0</td>
+      <td style="text-align: left"><strong>100.0</strong></td>
+      <td style="text-align: left">65.0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">4–3.5</td>
+      <td style="text-align: left">0_hard_grids_edit_distance_2</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">50</td>
+      <td style="text-align: left">50.0</td>
+      <td style="text-align: left"><strong>100.0</strong></td>
+      <td style="text-align: left">50.0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">1_hard_grids_edit_distance_4</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">55</td>
+      <td style="text-align: left">45.0</td>
+      <td style="text-align: left"><strong>100.0</strong></td>
+      <td style="text-align: left">45.0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">4–4</td>
+      <td style="text-align: left">0_hard_grids_edit_distance_2</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">25</td>
+      <td style="text-align: left"><strong>75.0</strong></td>
+      <td style="text-align: left"><strong>100.0</strong></td>
+      <td style="text-align: left"><strong>75.0</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">1_hard_grids_edit_distance_4</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">25</td>
+      <td style="text-align: left">75.0</td>
+      <td style="text-align: left"><strong>100.0</strong></td>
+      <td style="text-align: left">75.0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">cl–cl</td>
+      <td style="text-align: left">0_hard_grids_edit_distance_2</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">25</td>
+      <td style="text-align: left"><strong>75.0</strong></td>
+      <td style="text-align: left"><strong>100.0</strong></td>
+      <td style="text-align: left"><strong>75.0</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">1_hard_grids_edit_distance_4</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">10</td>
+      <td style="text-align: left"><strong>90.0</strong></td>
+      <td style="text-align: left"><strong>100.0</strong></td>
+      <td style="text-align: left"><strong>90.0</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">flc–flc</td>
+      <td style="text-align: left">0_hard_grids_edit_distance_2</td>
+      <td style="text-align: right">100</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: left"><NA></NA></td>
+      <td style="text-align: left">0.0</td>
+      <td style="text-align: left">0.0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">1_hard_grids_edit_distance_4</td>
+      <td style="text-align: right">100</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: left"><NA></NA></td>
+      <td style="text-align: left">0.0</td>
+      <td style="text-align: left">0.0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">ko–ko</td>
+      <td style="text-align: left">0_hard_grids_edit_distance_2</td>
+      <td style="text-align: right">100</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: left"><NA></NA></td>
+      <td style="text-align: left">0.0</td>
+      <td style="text-align: left">0.0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">1_hard_grids_edit_distance_4</td>
+      <td style="text-align: right">100</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: left"><NA></NA></td>
+      <td style="text-align: left">0.0</td>
+      <td style="text-align: left">0.0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">lm–lm</td>
+      <td style="text-align: left">0_hard_grids_edit_distance_2</td>
+      <td style="text-align: right">100</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: left"><NA></NA></td>
+      <td style="text-align: left">0.0</td>
+      <td style="text-align: left">0.0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">1_hard_grids_edit_distance_4</td>
+      <td style="text-align: right">100</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: left"><NA></NA></td>
+      <td style="text-align: left">0.0</td>
+      <td style="text-align: left">0.0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">ost–ost</td>
+      <td style="text-align: left">0_hard_grids_edit_distance_2</td>
+      <td style="text-align: right">90</td>
+      <td style="text-align: right">10</td>
+      <td style="text-align: left">0.0</td>
+      <td style="text-align: left">10.0</td>
+      <td style="text-align: left">0.0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">1_hard_grids_edit_distance_4</td>
+      <td style="text-align: right">80</td>
+      <td style="text-align: right">10</td>
+      <td style="text-align: left">50.0</td>
+      <td style="text-align: left">20.0</td>
+      <td style="text-align: left">10.0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">vcn–vcn</td>
+      <td style="text-align: left">0_hard_grids_edit_distance_2</td>
+      <td style="text-align: right">100</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: left"><NA></NA></td>
+      <td style="text-align: left">0.0</td>
+      <td style="text-align: left">0.0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">1_hard_grids_edit_distance_4</td>
+      <td style="text-align: right">100</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: left"><NA></NA></td>
+      <td style="text-align: left">0.0</td>
+      <td style="text-align: left">0.0</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Detailed results for each model on each experiment for the reference game</p>
+
+<h1 id="plots">Plots</h1>
+
+<p><b> METRIC - Aborted </b></p>
+
+<p><img src="plots/referencegame_Aborted.jpg" alt="Plots" /></p>
+
+<p><b> METRIC - Lose </b></p>
+
+<p><img src="plots/referencegame_Lose.jpg" alt="Plots" /></p>
+
+<p><b> METRIC - Main Score </b></p>
+
+<p><img src="plots/referencegame_Main Score.jpg" alt="Plots" /></p>
+
+<p><b> METRIC - Played </b></p>
+
+<p><img src="plots/referencegame_Played.jpg" alt="Plots" /></p>
+
+<p><b> METRIC - Success </b></p>
+
+<p><img src="plots/referencegame_Success.jpg" alt="Plots" /></p>
+
+      </div>
+    </main><footer class="site-footer h-card">
+    <data class="u-url" href="/temp2.github.io/"></data>
+  
+    <div class="wrapper">
+  
+      <div class="footer-col-wrapper">
+        <div class="footer-col footer-col-1">
+          <p> An open-source benchmark for evaluating chat-optimized language models as conversational agents through game play. </p>
+        </div>
+
+        <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/clembench/clembench"><svg class="svg-icon"><use xlink:href="/temp2.github.io/assets/minima-social-icons.svg#github"></use></svg> <span class="username">clem-bench</span></a></li></ul>
+  </div>
+  
+        <div class="footer-col footer-col-3">
+            <ul class="contact-list">
+            <li class="p-name"></li><li><a class="u-email" href="https://clp.ling.uni-potsdam.de/">Foundations of computational linguistics, Potsdam</a></li></ul>
+        </div>
+      </div>
+    
+    </div>
+  
+  </footer></body>
+
+</html>
