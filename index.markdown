@@ -2,7 +2,7 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-layout: home
+layout: default
 ---
 
 <!-- ---
@@ -17,7 +17,7 @@ categories: jekyll update -->
     }
 
     table {
-        margin-left: --25vw;
+        margin-left: auto;
         margin-right: auto;
     }
 
@@ -27,7 +27,7 @@ categories: jekyll update -->
         max-width: 90vw; /* Set maximum width to 1920 pixels */
         min-width: 90vw;
         margin: 0 auto; /* Center the module horizontally */
-        margin-left: -25vw;
+        margin-left: -22vw;
     }
 </style>
 
