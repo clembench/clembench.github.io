@@ -1,6 +1,4 @@
 import pandas as pd
-from tabulate import tabulate
-
 
 # FORMAT - 0:shortname, 1:fullname, 2:version, 3:parameters, 4:traineddatasize, 5:instructiontuned 
 models = [['lm', 'luminous-supreme', '2023-01', '70', '588', 'Y'], 

@@ -1,6 +1,4 @@
 import pandas as pd
-from tabulate import tabulate
-
 interaction_settings = [['taboo', "A game where one player tries to get the other player to guess a word without using certain 'taboo' words in their clues.", 'incremental learning/processing', 'language model/world model'], 
                         ['wordle', 'A game where one player thinks of a word and the other player tries to guess it by suggesting words that are similar or related.', 'incremental learning/processing', 'language model/world model'], 
                         ['wordle_withclue', 'A variant of Wordle where the guesser is given a clue to help them guess the target word.', 'incremental learning/processing', 'language model/world model'], 

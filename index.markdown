@@ -52,5 +52,3 @@ number of parameters in billions, trained data size
 
 {% include_relative _posts/output_markdowns/interaction_settings.md %}
 
-# Leaderboard by Individual Interaction Setting
-
