@@ -11,6 +11,7 @@ title:  "Welcome to Jekyll!"
 date:   2023-11-02 18:00:23 +0100
 categories: jekyll update -->
 
+
 # clembench: A Framework for the Systematic Evaluation of Chat-Optimized Language Models as Conversational Agents
 
 > Chalamalasetti, K., Götze, J., Hakimov, S., Madureira, B., Sadler, P., & Schlangen, D. (2023). clembench: Using Game Play to Evaluate Chat-Optimized Language Models as Conversational Agents. [PDF](https://doi.org/10.48550/arXiv.2305.13455)

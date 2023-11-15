@@ -7,19 +7,20 @@ title: Leaderboard
     body, html {
         margin: 0;
         padding: 0;
-        margin-left: -500px;
     }
 
     table {
-        margin-left: -200px;
+        margin-left: --25vw;
         margin-right: auto;
     }
 
     body gradio-app {
         display: flex;
-        width: 75vw; /* Make it 100% of the viewport width */
-        max-width: 1920px; /* Set maximum width to 1920 pixels */
+        width: 90vw; /* Make it 100% of the viewport width */
+        max-width: 90vw; /* Set maximum width to 1920 pixels */
+        min-width: 90vw;
         margin: 0 auto; /* Center the module horizontally */
+        margin-left: -25vw;
     }
 </style>
 
