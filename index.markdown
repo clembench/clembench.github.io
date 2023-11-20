@@ -24,7 +24,7 @@ The experiments reveal that the cLLMs perform well on some tasks, such as image 
 
 The paper concludes by discussing the potential implications of the clem-bench framework for the development of conversational agents. The authors argue that the framework has the potential to help improve the quality and effectiveness of conversational agents, and to promote transparency and accountability in their development. They also suggest several important next steps for the development of conversational agents, including testing the models' abilities to handle more complex and nuanced dialogue.
 
-# CLEMs (Chat-Optimized LLMs) Evaluated
+# CLEMS
 
 {% include_relative _posts/output_markdowns/models.md %}
 
@@ -32,7 +32,7 @@ The evaluated models with the details about
 number of parameters in billions, trained data size
 (tokens) in billions, and whether they were instruction tuned. Y: yes, n/a: publicly not available.
 
-# Interaction Settings in the Current Version
+# Interaction Settings
 
 {% include_relative _posts/output_markdowns/interaction_settings.md %}
 
