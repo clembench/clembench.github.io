@@ -14,7 +14,7 @@ categories: jekyll update -->
 
 # clembench: Systematic Evaluation of Chat-Optimized Language Models as Conversational Agents
 
-> Chalamalasetti, K., Götze, J., Hakimov, S., Madureira, B., Sadler, P., & Schlangen, D. (2023). clembench: Using Game Play to Evaluate Chat-Optimized Language Models as Conversational Agents. In Proceedings of EMNLP 2023. [PDF](https://doi.org/10.48550/arXiv.2305.13455)
+> Chalamalasetti, K., Götze, J., Hakimov, S., Madureira, B., Sadler, P., & Schlangen, D. (2023). clembench: Using Game Play to Evaluate Chat-Optimized Language Models as Conversational Agents. In Proceedings of EMNLP 2023. [PDF](https://aclanthology.org/2023.emnlp-main.689.pdf) DOI: [10.18653/v1/2023.emnlp-main.689](https://www.doi.org/10.18653/v1/2023.emnlp-main.689)
 
 
 <div class='iframe-video'>
