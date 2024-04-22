@@ -9,42 +9,47 @@
 .post-content,
 .main,
 .wrapper {
-    max-width: 100%; 
-    width: 75%; 
+    max-width: 70%; 
+    width: 100%;
     margin-left: auto; 
     margin-right: auto; 
 }
 
-/* Child styles */
+////////////////////////////// Base styles irrespective of resolution /////////////////////////////
+body.leaderboard-page .footer-col {
+    display: none;
+}
 
-/* For Leaderboard embed*/
+// Handle nav bar overlay
+.site-nav {
+    z-index: 999;
+}
+
 .iframe-container {
-    position: relative;
-    width: 140%; /* Set the width to 140% of the container */
-    margin-left: -20%; /* Negative margin to center the container */
-    margin-right: auto;
-    padding-top: 95.24%; /* Maintain aspect ratio based on original size */
-    text-align: center;
-    left: 0; /* Ensure it aligns from the left edge */
+    position: absolute;
+    max-width: 100%;
+    width: 99%;
+    height: 89%; 
+    margin-left: -25%;
+    z-index: 1; // For nav-bar overlay 
 }
 
 .iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     width: 100%; 
     height: 100%; 
-    border: none;
 }
-
 
 /* For video embed on index page*/ 
 .iframe-video {
     text-align: center;
     position: relative;
-    width: 75%; 
+    width: 100%; 
     margin: 0 auto; 
-    padding-top: 56.25%; 
+    padding-top: auto; 
+    min-width: 300px;
+    min-height: 500px;
+    z-index: 2; // For nav-bar overlay 
 }
 
 .iframe-video iframe {
@@ -72,10 +77,133 @@
     max-width: 300px;
 }
 
-/* Adjustments for smaller screens*/
-@media (max-width: 600px) {
-    .footer-col {
-        flex-basis: 100%;
-        margin: 10px 0; /* Adjust margin for vertical stacking */
+.table-container {
+    width: 99%;
+    align-self: center;
+    overflow-x: auto; 
+}
+
+
+.table-container table {
+    width: 100%;
+}
+
+.table-container td {
+    border: 1px solid black;
+}
+.table-container th {
+    border: 1px solid black; 
+}
+
+.contibutors td {
+    border: 1px solid black; 
+}
+.contibutors th {
+    border: 1px solid black; 
+}
+
+
+.contibutors {
+    width: 80%;
+    align-self: center;
+    overflow-x: auto; 
+}
+
+.contributors table {
+    width: 100%;
+    align-self: center;
+}
+
+// For mobile and tablet resolutions (>=375, <=1024 width)
+@media screen and (min-width: 375px) and (max-width: 1024px) {
+
+    // Set full width on mobile screens
+    .page-content,
+    .post-content,
+    .main,
+    .wrapper {
+        max-width: 95%; 
+        width: 100%;
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+
+    .iframe-container {
+        position: absolute;
+        width: 100%;
+        height: 120%; 
+        padding-left: auto;
+        margin-left: -7%;
+        padding-top: auto;
+        margin-top: auto;
+        z-index: 1; // For nav-bar overlay 
+    }
+ 
+
+}
+
+// For 4K resolution
+
+@media screen and (min-width: 3840px) {
+
+    .iframe-container {
+        position: absolute;
+        width: 50%;
+        height: 40%; 
+        margin-left: 0%;
+        margin-top: 15%;
+        z-index: 1; // For nav-bar overlay 
+    }
+    
+    .iframe-container iframe {
+        position: relative;
+        transform: scale(2.2);
+        width: 100%; 
+        height: 100%; 
+    }
+
+    body {
+        font-size: xx-large;
+    }
+    
+}
+
+@media screen and (min-width: 2160px) and (max-width: 3839px) {
+    .iframe-container {
+        position: absolute;
+        width: 50%;
+        height: 40%; 
+        margin-left: 0%;
+        margin-top: 35%;
+        z-index: 1; // For nav-bar overlay 
+    }
+    
+    .iframe-container iframe {
+        position: relative;
+        transform: scale(2);
+        width: 100%; 
+        height: 100%; 
     }
 }
+
+// For smaller screens (< 375 x 667 - Iphone 3-4)
+@media screen and (max-width: 374px) {
+    .iframe-container {
+        position: absolute;
+        width: 120%;
+        height: 100%; 
+        margin-left: -25%;
+        margin-top: -10%;
+        z-index: 1; // For nav-bar overlay 
+    }
+    
+    .iframe-container iframe {
+        position: relative;
+        transform: scale(0.8);
+        width: 100%; 
+        height: 100%; 
+    }
+}
+
+
+

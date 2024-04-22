@@ -29,11 +29,16 @@ df = pd.DataFrame(data)
 
 # Convert dataframe to markdown
 md = df.to_markdown(index=False)
+ht = df.to_html(index=False)
 # md = tabulate(md, headers='keys', tablefmt='pipe', stralign='center', numalign='center')
 print(md)
 
 file_name = "_posts/output_markdowns/interaction_settings.md"
 with open(file_name, "w") as file:
     file.write(md)
+
+file_name = "_posts/output_markdowns/interaction_settings.html"
+with open(file_name, "w") as file:
+    file.write(ht)
 
 # print(f"Markdown content saved to {file_name}")
