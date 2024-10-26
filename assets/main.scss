@@ -206,4 +206,41 @@ body.leaderboard-page .footer-col {
 }
 
 
+// .uni-logo {
+//     display: flex;
+//     align-items: center;
+//   }
+  
+// .site-title {
+// display: inline;
+// font-size: 1.5em;
+// }
 
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Space out items evenly */
+    align-items: center; /* Aligns items vertically center */
+    padding: 10px 0; /* Adjust padding as needed */
+  }
+  
+  .site-title {
+    display: flex; /* Flex to align logo and title */
+    align-items: center; /* Centers the logo with text */
+    margin-right: auto; /* Pushes nav and supported by to the right */
+  }
+  
+  .site-nav {
+    margin-left: 20px; /* Space between title and nav links */
+  }
+  
+  .supported-by {
+    display: flex; /* Allows for horizontal layout */
+    align-items: center; /* Centers the logo with text */
+    margin-left: auto; /* Pushes it to the far right */
+  }
+  
+  /* Additional styles for the nav links */
+  .page-link {
+    margin-left: 15px; /* Space between nav links */
+  }
+  

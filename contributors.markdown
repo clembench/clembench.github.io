@@ -12,12 +12,12 @@ If you want to contribute, get in touch!
 
 
 <div class="contributors">
-    <table>
+    <table style="width: 100%; table-layout: fixed;">
         <thead>
             <tr style="text-align: center;">
-                <th></th>
-                <th></th>
-                <th></th>
+                <th style="width: 33%;"> </th>
+                <th style="width: 33%;"> </th>
+                <th style="width: 33%;"> </th>
             </tr>
         </thead>
         <tbody>
@@ -44,7 +44,6 @@ If you want to contribute, get in touch!
         </tbody>
     </table>
 </div>
-
 
 
 
