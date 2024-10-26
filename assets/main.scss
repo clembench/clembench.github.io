@@ -244,3 +244,32 @@ body.leaderboard-page .footer-col {
     margin-left: 15px; /* Space between nav links */
   }
   
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    .header-content {
+      flex-direction: row; /* Stack items vertically */
+    //   align-items: flex-start; /* Align to the left */
+      padding: 5px; /* Reduce padding for smaller screens */
+    }
+  
+    .site-title {
+      font-size: 1em; /* Adjust font size for title */
+    //   margin: ; /* Add some margin for spacing */
+      text-align: center;
+      align-items: center;
+      align-content: center;
+    }
+  
+    .supported-by {
+    //   margin-top: 15px; /* Spacing above the supported by section */
+      font-size: 0.8em;
+      text-align: center;
+      align-items: center;
+      align-content: center;
+    }
+  
+    .page-link {
+      display: block; /* Stack links vertically */
+      padding: 5px 0; /* Add padding for touch targets */
+    }
+  }
