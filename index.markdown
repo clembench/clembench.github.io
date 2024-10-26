@@ -54,60 +54,97 @@ number of parameters in billions, trained data size
 
 
 # Interaction Settings in the Current Version
-
 <div class="table-container">
-<table>
+  <table>
     <thead>
-    <tr style="text-align: center;">
-      <th>interaction setting</th>
-      <th>description</th>
-      <th>anchoring process</th>
-      <th>representational domain</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr style="text-align: center;">
-      <td>taboo</td>
-      <td>A game where one player tries to get the other player to guess a word without using certain 'taboo' words in their clues.</td>
-      <td>incremental learning/processing</td>
-      <td>language model/world model</td>
-    </tr>
-    <tr style="text-align: center;">
-      <td>wordle</td>
-      <td>A game where one player thinks of a word and the other player tries to guess it by suggesting words that are similar or related.</td>
-      <td>incremental learning/processing</td>
-      <td>language model/world model</td>
-    </tr>
-    <tr style="text-align: center;">
-      <td>wordle_withclue</td>
-      <td>A variant of Wordle where the guesser is given a clue to help them guess the target word.</td>
-      <td>incremental learning/processing</td>
-      <td>language model/world model</td>
-    </tr>
-    <tr style="text-align: center;">
-      <td>wordle_withcritic</td>
-      <td>A variant of Wordle where the guesser's suggestions are evaluated by a third player, who provides feedback on their accuracy.</td>
-      <td>incremental learning/processing</td>
-      <td>language model/world model</td>
-    </tr>
-    <tr style="text-align: center;">
-      <td>imagegame</td>
-      <td>A game where one player draws a picture and the other player tries to guess what it represents.</td>
-      <td>multimodal grounding</td>
-      <td>situation model</td>
-    </tr>
-    <tr style="text-align: center;">
-      <td>referencegame</td>
-      <td>A game where one player describes an object and the other player tries to identify it based on the description.</td>
-      <td>multimodal grounding</td>
-      <td>situation model</td>
-    </tr>
-    <tr style="text-align: center;">
-      <td>privateshared</td>
-      <td>A game where two players are given different pieces of information and must work together to solve a problem.</td>
-      <td>conversational grounding</td>
-      <td>discourse model</td>
-    </tr>
-  </tbody>
-</table>
+      <tr style="text-align: center;">
+        <th colspan="4">Text Based</th>
+      </tr>
+      <tr style="text-align: center;">
+        <th>Interaction Setting</th>
+        <th>Description</th>
+        <th>Anchoring Process</th>
+        <th>Representational Domain</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="text-align: center;">
+        <td>taboo</td>
+        <td>A game where one player tries to get the other player to guess a word without using certain 'taboo' words in their clues.</td>
+        <td>incremental learning/processing</td>
+        <td>language model/world model</td>
+      </tr>
+      <tr style="text-align: center;">
+        <td>wordle</td>
+        <td>A game where one player thinks of a word and the other player tries to guess it by suggesting words that are similar or related.</td>
+        <td>incremental learning/processing</td>
+        <td>language model/world model</td>
+      </tr>
+      <tr style="text-align: center;">
+        <td>wordle_withclue</td>
+        <td>A variant of Wordle where the guesser is given a clue to help them guess the target word.</td>
+        <td>incremental learning/processing</td>
+        <td>language model/world model</td>
+      </tr>
+      <tr style="text-align: center;">
+        <td>wordle_withcritic</td>
+        <td>A variant of Wordle where the guesser's suggestions are evaluated by a third player, who provides feedback on their accuracy.</td>
+        <td>incremental learning/processing</td>
+        <td>language model/world model</td>
+      </tr>
+      <tr style="text-align: center;">
+        <td>imagegame</td>
+        <td>A game where one player draws a picture and the other player tries to guess what it represents.</td>
+        <td>multimodal grounding</td>
+        <td>situation model</td>
+      </tr>
+      <tr style="text-align: center;">
+        <td>referencegame</td>
+        <td>A game where one player describes an object and the other player tries to identify it based on the description.</td>
+        <td>multimodal grounding</td>
+        <td>situation model</td>
+      </tr>
+      <tr style="text-align: center;">
+        <td>text mapworld</td>
+        <td>A single-player exploration game where the player navigates a map based on given directions and room descriptions.</td>
+        <td>multimodal/conversational grounding</td>
+        <td>situation model</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <table>
+    <thead>
+      <tr style="text-align: center;">
+        <th colspan="4">Multimodal</th>
+      </tr>
+      <tr style="text-align: center;">
+        <th>Interaction Setting</th>
+        <th>Description</th>
+        <th>Anchoring Process</th>
+        <th>Representational Domain</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="text-align: center;">
+        <td>matchit</td>
+        <td>A game where players identify whether two images are the same or different through dialogue.</td>
+        <td>multimodal/conversational grounding</td>
+        <td>situation/agent model</td>
+      </tr>
+      <tr style="text-align: center;">
+        <td>multimodal reference game</td>
+        <td>A game where one player describes an object and the other player tries to identify it based on the description using multiple modalities.</td>
+        <td>multimodal/conversational grounding</td>
+        <td>situation model</td>
+      </tr>
+      <tr style="text-align: center;">
+        <td>multimodal mapworld</td>
+        <td>A single-player exploration game in which the player navigates a map using multimodal inputs.</td>
+        <td>multimodal/conversational grounding</td>
+        <td>situation model</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
+
