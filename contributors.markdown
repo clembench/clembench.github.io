@@ -6,7 +6,7 @@ title: Contributors
 
 ### The ClemClub
 
-Setting this up and keeping this running represents a major effort. The authors of the paper introducing the clembench have done the initial work, and are now supported by a number of wonderful students at the University of Potsdam (mostly in the [Cognitive Systems MSc](https://www.uni-potsdam.de/en/studium/what-to-study/master/masters-courses-from-a-to-z/cognitive-systems)).
+Setting this up and keeping this running represents a major effort. The authors of the paper introducing the clembench have done the initial work, and are now supported by a number of wonderful students at the University of Potsdam (mostly in the [Cognitive Systems MSc](https://www.ling.uni-potsdam.de/cogsys/)).
 
 If you want to contribute, get in touch!
 
