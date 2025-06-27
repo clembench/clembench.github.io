@@ -1,9 +1,128 @@
 ---
 layout: default
-title: Explore Clembench Transcripts
+title: Benchmark Transcripts
 ---
 
 <style>
+/* Dark mode styles for the page outside the embedded HTML */
+html, body {
+    background-color: #0d1117 !important;
+    color: #e6edf3 !important;
+}
+
+/* Override any existing light theme styles */
+.container, .main-content, .content, .page-content {
+    background-color: #0d1117 !important;
+    color: #e6edf3 !important;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    color: #f0f6fc !important;
+    border-bottom-color: #30363d !important;
+}
+
+/* Links */
+a {
+    color: #58a6ff !important;
+}
+
+a:hover {
+    color: #79c0ff !important;
+}
+
+a:visited {
+    color: #bc8cff !important;
+}
+
+/* Text elements */
+p, div, span, li {
+    color: #e6edf3 !important;
+}
+
+/* Code blocks */
+code {
+    background-color: #161b22 !important;
+    color: #f85149 !important;
+    padding: 2px 4px !important;
+    border-radius: 3px !important;
+}
+
+pre {
+    background-color: #161b22 !important;
+    border: 1px solid #30363d !important;
+    border-radius: 6px !important;
+}
+
+pre code {
+    background-color: transparent !important;
+    color: #e6edf3 !important;
+}
+
+/* Blockquotes */
+blockquote {
+    border-left-color: #30363d !important;
+    color: #7d8590 !important;
+    background-color: #0d1117 !important;
+}
+
+/* Tables */
+table {
+    background-color: #0d1117 !important;
+}
+
+table th {
+    background-color: #161b22 !important;
+    color: #f0f6fc !important;
+    border-color: #30363d !important;
+}
+
+table td {
+    background-color: #0d1117 !important;
+    color: #e6edf3 !important;
+    border-color: #30363d !important;
+}
+
+/* Navigation and site elements */
+.site-header, .site-nav, .page-header {
+    background-color: #161b22 !important;
+    border-bottom-color: #30363d !important;
+}
+
+.site-title, .site-nav a {
+    color: #f0f6fc !important;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #161b22 !important;
+    border-top-color: #30363d !important;
+}
+
+/* Buttons */
+button, .btn {
+    background-color: #21262d !important;
+    color: #e6edf3 !important;
+    border-color: #30363d !important;
+}
+
+button:hover, .btn:hover {
+    background-color: #30363d !important;
+}
+
+/* Form elements */
+input, textarea, select {
+    background-color: #0d1117 !important;
+    color: #e6edf3 !important;
+    border-color: #30363d !important;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #1f6feb !important;
+    box-shadow: 0 0 0 3px rgba(31, 111, 235, 0.15) !important;
+}
+
+/* Embedded HTML App Styles */
 * {
     margin: 0;
     padding: 0;
@@ -192,7 +311,7 @@ body {
 </style>
 
 <div class="header">
-    <h1>🐙 GitHub Repository Browser</h1>
+    <h1>🐙 Clembench Transcripts Explorer</h1>
     <div class="repo-input">
         <input 
             type="text" 
