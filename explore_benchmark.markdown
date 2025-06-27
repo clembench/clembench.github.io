@@ -4,125 +4,120 @@ title: Benchmark Transcripts
 ---
 
 <style>
-/* Dark mode styles for the page outside the embedded HTML */
+/* Full width responsive layout - keeping default theme colors */
 html, body {
-    background-color: #0d1117 !important;
-    color: #e6edf3 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    min-height: 100vh !important;
 }
 
-/* Override any existing light theme styles */
-.container, .main-content, .content, .page-content {
-    background-color: #0d1117 !important;
-    color: #e6edf3 !important;
+.container, .main-content, .content, .page-content, .wrapper {
+    max-width: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
-/* Headers */
-h1, h2, h3, h4, h5, h6 {
-    color: #f0f6fc !important;
-    border-bottom-color: #30363d !important;
+/* Responsive padding for readability */
+@media (min-width: 768px) {
+    .container, .main-content, .content, .page-content {
+        padding: 0 20px !important;
+    }
 }
 
-/* Links */
-a {
-    color: #58a6ff !important;
-}
-
-a:hover {
-    color: #79c0ff !important;
-}
-
-a:visited {
-    color: #bc8cff !important;
-}
-
-/* Text elements */
-p, div, span, li {
-    color: #e6edf3 !important;
-}
-
-/* Code blocks */
-code {
-    background-color: #161b22 !important;
-    color: #f85149 !important;
-    padding: 2px 4px !important;
-    border-radius: 3px !important;
-}
-
-pre {
-    background-color: #161b22 !important;
-    border: 1px solid #30363d !important;
-    border-radius: 6px !important;
-}
-
-pre code {
-    background-color: transparent !important;
-    color: #e6edf3 !important;
-}
-
-/* Blockquotes */
-blockquote {
-    border-left-color: #30363d !important;
-    color: #7d8590 !important;
-    background-color: #0d1117 !important;
-}
-
-/* Tables */
-table {
-    background-color: #0d1117 !important;
-}
-
-table th {
-    background-color: #161b22 !important;
-    color: #f0f6fc !important;
-    border-color: #30363d !important;
-}
-
-table td {
-    background-color: #0d1117 !important;
-    color: #e6edf3 !important;
-    border-color: #30363d !important;
-}
-
-/* Navigation and site elements */
-.site-header, .site-nav, .page-header {
-    background-color: #161b22 !important;
-    border-bottom-color: #30363d !important;
-}
-
-.site-title, .site-nav a {
-    color: #f0f6fc !important;
-}
-
-/* Footer */
-.site-footer {
-    background-color: #161b22 !important;
-    border-top-color: #30363d !important;
-}
-
-/* Buttons */
-button, .btn {
-    background-color: #21262d !important;
-    color: #e6edf3 !important;
-    border-color: #30363d !important;
-}
-
-button:hover, .btn:hover {
-    background-color: #30363d !important;
-}
-
-/* Form elements */
-input, textarea, select {
-    background-color: #0d1117 !important;
-    color: #e6edf3 !important;
-    border-color: #30363d !important;
-}
-
-input:focus, textarea:focus, select:focus {
-    border-color: #1f6feb !important;
-    box-shadow: 0 0 0 3px rgba(31, 111, 235, 0.15) !important;
+@media (min-width: 1200px) {
+    .container, .main-content, .content, .page-content {
+        padding: 0 40px !important;
+    }
 }
 
 /* Embedded HTML App Styles */
+.github-browser-container {
+    resize: both;
+    overflow: auto;
+    min-width: 800px;
+    min-height: 600px;
+    width: 100%;
+    height: 80vh;
+    border: 2px solid #30363d;
+    border-radius: 8px;
+    background: #0d1117;
+    position: relative;
+}
+
+.github-browser-container::after {
+    content: "⟲";
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: #7d8590;
+    font-size: 14px;
+    pointer-events: none;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .github-browser-container {
+        min-width: 100%;
+        resize: vertical;
+        height: 70vh;
+        min-height: 500px;
+    }
+    
+    .main-content {
+        flex-direction: column;
+    }
+    
+    .file-browser {
+        width: 100% !important;
+        height: 40vh;
+        border-right: none !important;
+        border-bottom: 1px solid #30363d;
+    }
+    
+    .preview-pane {
+        height: 60vh;
+    }
+    
+    .header {
+        padding: 15px !important;
+    }
+    
+    .repo-input {
+        flex-direction: column !important;
+        gap: 15px !important;
+    }
+    
+    .repo-input input {
+        width: 100% !important;
+    }
+    
+    .repo-input button {
+        width: 100% !important;
+        padding: 12px !important;
+    }
+}
+
+/* Tablet adjustments */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .github-browser-container {
+        min-width: 700px;
+        min-height: 500px;
+    }
+    
+    .file-browser {
+        width: 35% !important;
+    }
+}
 * {
     margin: 0;
     padding: 0;
@@ -236,6 +231,10 @@ body {
     color: #f85149;
 }
 
+.file-item.json-file {
+    color: #ffa657;
+}
+
 .file-item.selected {
     background: #1f6feb;
     color: white;
@@ -284,6 +283,44 @@ body {
     border: none;
 }
 
+.json-preview {
+    width: 100%;
+    height: 100%;
+    background: #f6f8fa;
+    overflow: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.json-content {
+    background: #161b22;
+    color: #e6edf3;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.json-header {
+    background: #161b22;
+    color: #f0f6fc;
+    padding: 15px 20px;
+    border-bottom: 1px solid #30363d;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.json-string { color: #a5d6ff; }
+.json-number { color: #79c0ff; }
+.json-boolean { color: #ffab70; }
+.json-null { color: #f85149; }
+.json-key { color: #7ee787; }
+.json-punctuation { color: #e6edf3; }
+
 .preview-placeholder {
     display: flex;
     align-items: center;
@@ -310,6 +347,7 @@ body {
 }
 </style>
 
+<div class="github-browser-container">
 <div class="header">
     <h1>🐙 GitHub Repository Browser</h1>
     <div class="repo-input">
@@ -334,6 +372,7 @@ body {
             </div>
         </div>
     </div>
+</div>
 
     <div class="preview-pane">
         <div class="preview-placeholder" id="previewPlaceholder">
@@ -434,8 +473,12 @@ class GitHubBrowser {
                 });
             } else {
                 const isHtml = item.name.toLowerCase().endsWith('.html') || item.name.toLowerCase().endsWith('.htm');
+                const isJson = item.name.toLowerCase().endsWith('.json');
+                
                 if (isHtml) {
                     fileItem.classList.add('html-file');
+                } else if (isJson) {
+                    fileItem.classList.add('json-file');
                 }
                 
                 fileItem.innerHTML = `
@@ -446,6 +489,11 @@ class GitHubBrowser {
                 if (isHtml) {
                     fileItem.addEventListener('click', () => {
                         this.previewHtmlFile(item);
+                        this.selectFile(fileItem);
+                    });
+                } else if (isJson) {
+                    fileItem.addEventListener('click', () => {
+                        this.previewJsonFile(item);
                         this.selectFile(fileItem);
                     });
                 }
@@ -472,6 +520,71 @@ class GitHubBrowser {
             'svg': '🖼️'
         };
         return icons[ext] || '📄';
+    }
+
+    previewJsonFile(file) {
+        const previewPane = document.querySelector('.preview-pane');
+        
+        // Show loading state
+        previewPane.innerHTML = `
+            <div class="json-preview">
+                <div class="json-header">📋 ${file.name}</div>
+                <div class="loading">
+                    <div class="spinner"></div>
+                    Loading JSON file...
+                </div>
+            </div>
+        `;
+        
+        // Fetch and display JSON
+        fetch(file.download_url)
+            .then(response => response.text())
+            .then(jsonText => {
+                try {
+                    // Try to parse and pretty-print JSON
+                    const jsonObj = JSON.parse(jsonText);
+                    const prettyJson = JSON.stringify(jsonObj, null, 2);
+                    const highlightedJson = this.highlightJson(prettyJson);
+                    
+                    previewPane.innerHTML = `
+                        <div class="json-preview">
+                            <div class="json-header">📋 ${file.name}</div>
+                            <div class="json-content">${highlightedJson}</div>
+                        </div>
+                    `;
+                } catch (error) {
+                    // If JSON is invalid, show raw content
+                    previewPane.innerHTML = `
+                        <div class="json-preview">
+                            <div class="json-header">📋 ${file.name} (Invalid JSON)</div>
+                            <div class="json-content">${this.escapeHtml(jsonText)}</div>
+                        </div>
+                    `;
+                }
+            })
+            .catch(error => {
+                previewPane.innerHTML = `
+                    <div class="json-preview">
+                        <div class="json-header">📋 ${file.name}</div>
+                        <div class="error">
+                            ❌ Error loading JSON file: ${error.message}
+                        </div>
+                    </div>
+                `;
+            });
+    }
+
+    highlightJson(jsonString) {
+        return jsonString
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/(".*?")(\s*:)/g, '<span class="json-key">$1</span><span class="json-punctuation">$2</span>')
+            .replace(/:\s*(".*?")/g, ': <span class="json-string">$1</span>')
+            .replace(/:\s*(-?\d+\.?\d*)/g, ': <span class="json-number">$1</span>')
+            .replace(/:\s*(true|false)/g, ': <span class="json-boolean">$1</span>')
+            .replace(/:\s*(null)/g, ': <span class="json-null">$1</span>')
+            .replace(/([{}\[\],])/g, '<span class="json-punctuation">$1</span>');
     }
 
     selectFile(fileElement) {
