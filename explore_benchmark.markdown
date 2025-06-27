@@ -311,7 +311,7 @@ body {
 </style>
 
 <div class="header">
-    <h1>🐙 Clembench Transcripts Explorer</h1>
+    <h1>🐙 GitHub Repository Browser</h1>
     <div class="repo-input">
         <input 
             type="text" 
