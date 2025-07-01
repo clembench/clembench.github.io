@@ -5,7 +5,7 @@ title: LLM Calculator
 
 <div class="iframe-container">
     <iframe 
-		src="https://koshti10-llmcalc.hf.space"
+		src="https://colab-potsdam-llm-calculator.hf.space"
 		frameborder="0">
 	</iframe>
 </div>
