@@ -91,7 +91,7 @@ title: Transcript Browser
 
         .preview-pane {
             flex: 1;
-            background: #f6f8fa;
+            background: #ffffff;
             position: relative;
         }
 
@@ -117,7 +117,8 @@ title: Transcript Browser
             color: #7d8590;
         }
 
-        .file-item.html-file {
+        .file-item.html-file,
+        .file-item.json-file {
             color: #f85149;
         }
 
@@ -167,6 +168,37 @@ title: Transcript Browser
             width: 100%;
             height: 100%;
             border: none;
+        }
+
+        .json-preview {
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            padding: 20px;
+            background: #ffffff;
+            color: #24292e;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+
+        .json-preview .key {
+            color: #24292e;
+        }
+
+        .json-preview .string {
+            color: #032f62;
+        }
+
+        .json-preview .number {
+            color: #005cc5;
+        }
+
+        .json-preview .boolean {
+            color: #005cc5;
+        }
+
+        .json-preview .null {
+            color: #6a737d;
         }
 
         .preview-placeholder {
@@ -223,7 +255,7 @@ title: Transcript Browser
 
         <div class="preview-pane">
             <div class="preview-placeholder" id="previewPlaceholder">
-                Click on an HTML file to preview it here
+                Click on an HTML or JSON file to preview it here
             </div>
         </div>
     </div>
@@ -320,8 +352,12 @@ title: Transcript Browser
                         });
                     } else {
                         const isHtml = item.name.toLowerCase().endsWith('.html') || item.name.toLowerCase().endsWith('.htm');
+                        const isJson = item.name.toLowerCase().endsWith('.json');
+                        
                         if (isHtml) {
                             fileItem.classList.add('html-file');
+                        } else if (isJson) {
+                            fileItem.classList.add('json-file');
                         }
                         
                         fileItem.innerHTML = `
@@ -329,9 +365,13 @@ title: Transcript Browser
                             <span>${item.name}</span>
                         `;
 
-                        if (isHtml) {
+                        if (isHtml || isJson) {
                             fileItem.addEventListener('click', () => {
-                                this.previewHtmlFile(item);
+                                if (isHtml) {
+                                    this.previewHtmlFile(item);
+                                } else {
+                                    this.previewJsonFile(item);
+                                }
                                 this.selectFile(fileItem);
                             });
                         }
@@ -377,6 +417,57 @@ title: Transcript Browser
                 previewPane.innerHTML = `
                     <iframe class="preview-iframe" src="${previewUrl}"></iframe>
                 `;
+            }
+
+            async previewJsonFile(file) {
+                const previewPane = document.querySelector('.preview-pane');
+                previewPane.innerHTML = `
+                    <div class="loading">
+                        <div class="spinner"></div>
+                        Loading JSON content...
+                    </div>
+                `;
+
+                try {
+                    const response = await fetch(file.download_url);
+                    const jsonText = await response.text();
+                    const jsonData = JSON.parse(jsonText);
+                    const formattedJson = this.formatJson(jsonData);
+                    
+                    previewPane.innerHTML = `
+                        <div class="json-preview">${formattedJson}</div>
+                    `;
+                } catch (error) {
+                    previewPane.innerHTML = `
+                        <div class="error">
+                            Error loading JSON file: ${error.message}
+                        </div>
+                    `;
+                }
+            }
+
+            formatJson(data) {
+                const syntaxHighlight = (json) => {
+                    json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+                    return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, (match) => {
+                        let cls = 'number';
+                        if (/^"/.test(match)) {
+                            if (/:$/.test(match)) {
+                                cls = 'key';
+                                match = match.slice(0, -1) + '</span>:';
+                            } else {
+                                cls = 'string';
+                            }
+                        } else if (/true|false/.test(match)) {
+                            cls = 'boolean';
+                        } else if (/null/.test(match)) {
+                            cls = 'null';
+                        }
+                        return `<span class="${cls}">${match}</span>`;
+                    });
+                };
+
+                return syntaxHighlight(JSON.stringify(data, null, 2));
             }
 
             renderBreadcrumb() {
