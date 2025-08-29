@@ -154,8 +154,8 @@ number of parameters in billions, trained data size
 	<tr style="text-align: center;">
         <td>guess-what</td>
         <td>A two-player game word guessing game where one player picks a word out of eight options and the second player tries to guess the word by asking questions that lead to Yes/No answers.</td>
-        <td>multimodal/conversational grounding</td>
-        <td>situation/agent model</td>
+        <td>incremental learning/processing</td>
+        <td>language model/world model </td>
       </tr>
     </tbody>
   </table>
