@@ -21,7 +21,7 @@ categories: jekyll update -->
 > Jordan, J., Hakimov, S., Schlangen, D. (2025). Plant in Cupboard, Orange on Rably, Inat Aphone. Benchmarking Incremental Learning of Situation and Language Model using a Text-Simulated Situated Environment. In: Text, Speech, and Dialogue. TSD 2025. Lecture Notes in Computer Science(), vol 16030. Springer, Cham. [PDF](https://arxiv.org/pdf/2502.11733) DOI:[10.1007/978-3-032-02551-7_6](https://doi.org/10.1007/978-3-032-02551-7_6) 
 
 
-> Hakimov, S., Pfennigschmidt, L., and Schlangen, D. 2025. Ad-hoc Concept Forming in the Game Codenames as a Means for Evaluating Large Language Models. In Proceedings of the Fourth Workshop on Generation, Evaluation and Metrics (GEM²), pages 728–740, Vienna, Austria and virtual meeting. Association for Computational Linguistics. [PDF](https://aclanthology.org/2025.gem-1.63.pdf)
+> Hakimov, S., Pfennigschmidt, L., and Schlangen, D. (2025). Ad-hoc Concept Forming in the Game Codenames as a Means for Evaluating Large Language Models. In Proceedings of the Fourth Workshop on Generation, Evaluation and Metrics (GEM²), pages 728–740, Vienna, Austria and virtual meeting. Association for Computational Linguistics. [PDF](https://aclanthology.org/2025.gem-1.63.pdf)
 
 > Beyer, A., Chalamalasetti, K., Hakimov, S., Madureira, B., Sadler, P., & Schlangen, D. (2024). clembench-2024: A Challenging, Dynamic, Complementary, Multilingual Benchmark and Underlying Flexible Framework for LLMs as Multi-Action Agents. [arXiv preprint arXiv:2405.20859](https://arxiv.org/abs/2405.20859)
 
