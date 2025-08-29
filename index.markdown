@@ -18,6 +18,11 @@ categories: jekyll update -->
 
 > Hakimov, S., Abdullayeva, Y., Koshti, K., Schmidt, A., Weiser, Y., Beyer, A., & Schlangen. D. (2025). Using Game Play to Investigate Multimodal and Conversational Grounding in Large Multimodal Models. In Proceedings of COLING 2025. [arXiv preprint arXiv:2406.14035](https://arxiv.org/abs/2406.14035)
 
+> Jordan, J., Hakimov, S., Schlangen, D. (2025). Plant in Cupboard, Orange on Rably, Inat Aphone. Benchmarking Incremental Learning of Situation and Language Model using a Text-Simulated Situated Environment. In: Text, Speech, and Dialogue. TSD 2025. Lecture Notes in Computer Science(), vol 16030. Springer, Cham. [PDF](https://arxiv.org/pdf/2502.11733) DOI:[10.1007/978-3-032-02551-7_6](https://doi.org/10.1007/978-3-032-02551-7_6) 
+
+
+> Hakimov, S., Pfennigschmidt, L., and Schlangen, D. 2025. Ad-hoc Concept Forming in the Game Codenames as a Means for Evaluating Large Language Models. In Proceedings of the Fourth Workshop on Generation, Evaluation and Metrics (GEM²), pages 728–740, Vienna, Austria and virtual meeting. Association for Computational Linguistics. [PDF](https://aclanthology.org/2025.gem-1.63.pdf)
+
 > Beyer, A., Chalamalasetti, K., Hakimov, S., Madureira, B., Sadler, P., & Schlangen, D. (2024). clembench-2024: A Challenging, Dynamic, Complementary, Multilingual Benchmark and Underlying Flexible Framework for LLMs as Multi-Action Agents. [arXiv preprint arXiv:2405.20859](https://arxiv.org/abs/2405.20859)
 
 > Bhavsar, N., Jordan, J., Hakimov, S., & Schlangen. D. (2024). How Many Parameters Does it Take to Change a Light Bulb? Evaluating Performance in Self-Play of Conversational Games as a Function of Model Characteristics [arXiv preprint arXiv:2406.14051](https://arxiv.org/abs/2406.14051)
@@ -92,6 +97,12 @@ number of parameters in billions, trained data size
         <td>incremental learning/processing</td>
         <td>language model/world model</td>
       </tr>
+	<tr style="text-align: center;">
+        <td>private-shared</td>
+        <td>A two player game where one player acts as an agent for booking some service and the other player gives their preferences.</td>
+        <td>incremental learning/processing</td>
+        <td>language model/world model</td>
+      </tr>
       <tr style="text-align: center;">
         <td>imagegame</td>
         <td>A game where one player draws a picture and the other player tries to guess what it represents.</td>
@@ -109,6 +120,42 @@ number of parameters in billions, trained data size
         <td>A single-player exploration game where the player navigates a map based on given directions and room descriptions.</td>
         <td>multimodal/conversational grounding</td>
         <td>situation model</td>
+      </tr>
+	<tr style="text-align: center;">
+        <td>text mapworld-graph-reasoning</td>
+        <td>A single-player exploration game where the player navigates a map based on given directions and in every turn is asked to produce the graph of the entire map up to that point.</td>
+        <td>multimodal/conversational grounding</td>
+        <td>situation model</td>
+      </tr>
+	<tr style="text-align: center;">
+        <td>text mapworld-specific-room</td>
+        <td>A single-player exploration game where the player navigates a map and expected to find the specific room that fits the given description of it.</td>
+        <td>multimodal/conversational grounding</td>
+        <td>situation model</td>
+      </tr>
+	<tr style="text-align: center;">
+        <td>codenames</td>
+        <td>A two-playergame where one player gives a clue that targets words and the other player tries to guess the words using the clue.</td>
+        <td>incremental learning/processing</td>
+        <td>language model/world model</td>
+      </tr>
+	<tr style="text-align: center;">
+        <td>adventuregame</td>
+        <td>A single player exploration game where the player is given a task in a typical home environment and is expected to perform that task by navigating the rooms, interacting with the objects.</td>
+        <td>incremental learning/processing</td>
+        <td>language model/world model</td>
+      </tr>
+	<tr style="text-align: center;">
+        <td>matchit-ascii</td>
+        <td>A game where players identify whether two images (in ASCII format) are the same or different through dialogue.</td>
+        <td>multimodal/conversational grounding</td>
+        <td>situation/agent model</td>
+      </tr>
+	<tr style="text-align: center;">
+        <td>guess-what</td>
+        <td>A two-player game word guessing game where one player picks a word out of eight options and the second player tries to guess the word by asking questions that lead to Yes/No answers.</td>
+        <td>multimodal/conversational grounding</td>
+        <td>situation/agent model</td>
       </tr>
     </tbody>
   </table>
@@ -141,6 +188,18 @@ number of parameters in billions, trained data size
       <tr style="text-align: center;">
         <td>multimodal mapworld</td>
         <td>A single-player exploration game in which the player navigates a map using multimodal inputs.</td>
+        <td>multimodal/conversational grounding</td>
+        <td>situation model</td>
+      </tr>
+<tr style="text-align: center;">
+        <td>multimodal mapworld-specific-room</td>
+        <td>A single-player exploration game where the player navigates a map and expected to find the specific room that fits the given description of it.</td>
+        <td>multimodal/conversational grounding</td>
+        <td>situation model</td>
+      </tr>
+<tr style="text-align: center;">
+        <td>multimodal mapworld-graph-reasoning</td>
+        <td>A single-player exploration game where the player navigates a map based on given directions and in every turn is asked to produce the graph of the entire map up to that point.</td>
         <td>multimodal/conversational grounding</td>
         <td>situation model</td>
       </tr>
