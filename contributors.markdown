@@ -46,6 +46,11 @@ If you want to contribute, get in touch!
                 <td>Nicola Horst<br>learning on interaction data<br>[MSc Student @ Uni Potsdam]</td>
                 <td>Dimitrije Ristic<br>game design<br>[MSc Student @ Uni Potsdam]</td>
             </tr>
+            <tr style="text-align: center;">
+                <td>Karl Osswald<br>game design & integration, backend integration<br>[MSc Student @ Uni Potsdam]</td>
+                <td></td>
+                <td></td>
+            </tr>
         </tbody>
     </table>
 </div>
