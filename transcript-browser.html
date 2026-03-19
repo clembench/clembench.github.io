@@ -1,3 +1,6 @@
+---
+title: Transcript Browser
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -143,6 +146,8 @@ function reset(...sels) {
   });
 }
 
+const REPO_RAW = 'https://raw.githubusercontent.com/clembench/clembench-runs/main';
+
 function showTranscript() {
   const game  = selGame.value;
   const model = selModel.value;
@@ -150,10 +155,17 @@ function showTranscript() {
   const inst  = selInst.value;
   if (!game || !model || !exp || !inst) return;
   const path = `v3.0/${model}/${game}/${exp}/${inst}/transcript.html`;
+  const url  = `${REPO_RAW}/${path}`;
   status.textContent = path;
   placeholder.style.display = 'none';
   viewer.style.display = 'block';
-  viewer.src = path;
+  viewer.srcdoc = '<p style="font-family:sans-serif;padding:2rem;color:#888">Loading…</p>';
+  fetch(url)
+    .then(r => { if (!r.ok) throw new Error(r.status); return r.text(); })
+    .then(html => { viewer.srcdoc = html; })
+    .catch(err => {
+      viewer.srcdoc = `<p style="font-family:sans-serif;padding:2rem;color:red">Failed to load transcript: ${err}</p>`;
+    });
 }
 
 // Populate games on load
