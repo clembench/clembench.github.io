@@ -20,15 +20,15 @@ categories: jekyll update -->
 
 > Bhavsar, N., Jordan, J., Hakimov, S., & Schlangen. D. (2024). How Many Parameters Does it Take to Change a Light Bulb? Evaluating Performance in Self-Play of Conversational Games as a Function of Model Characteristics [arXiv preprint arXiv:2406.14051](https://arxiv.org/abs/2406.14051)
 
-> Hakimov, S., Abdullayeva, Y., Koshti, K., Schmidt, A., Weiser, Y., Beyer, A., & Schlangen. D. (2025). Using Game Play to Investigate Multimodal and Conversational Grounding in Large Multimodal Models. In Proceedings of COLING 2025. [arXiv preprint arXiv:2406.14035](https://arxiv.org/abs/2406.14035)
+> Hakimov, S., Abdullayeva, Y., Koshti, K., Schmidt, A., Weiser, Y., Beyer, A., & Schlangen. D. (2025). Using Game Play to Investigate Multimodal and Conversational Grounding in Large Multimodal Models. In Proceedings of COLING 2025. [PDF](https://aclanthology.org/2025.coling-main.381/)
 
-> Jordan, J., Hakimov, S., Schlangen, D. (2025). Plant in Cupboard, Orange on Rably, Inat Aphone. Benchmarking Incremental Learning of Situation and Language Model using a Text-Simulated Situated Environment. In: Text, Speech, and Dialogue. TSD 2025. Lecture Notes in Computer Science(), vol 16030. Springer, Cham. [PDF](https://arxiv.org/pdf/2502.11733) DOI:[10.1007/978-3-032-02551-7_6](https://doi.org/10.1007/978-3-032-02551-7_6) 
+> Jordan, J., Hakimov, S., Schlangen, D. (2025). Plant in Cupboard, Orange on Rably, Inat Aphone. Benchmarking Incremental Learning of Situation and Language Model using a Text-Simulated Situated Environment. In: Text, Speech, and Dialogue. TSD 2025. Lecture Notes in Computer Science(), vol 16030. Springer, Cham. [PDF](https://arxiv.org/pdf/2502.11733) DOI:[10.1007/978-3-032-02551-7_6](https://doi.org/10.1007/978-3-032-02551-7_6)
 
 > Hakimov, S., Pfennigschmidt, L., and Schlangen, D. (2025). Ad-hoc Concept Forming in the Game Codenames as a Means for Evaluating Large Language Models. In Proceedings of the Fourth Workshop on Generation, Evaluation and Metrics (GEM²), pages 728–740, Vienna, Austria and virtual meeting. Association for Computational Linguistics. [PDF](https://aclanthology.org/2025.gem-1.63.pdf)
 
-> Hakimov S, Bernard R, Leiber T, Osswald K, Richert K, Yang R, Bernardi R, Schlangen D. (2025). The Price of Thought: A Multilingual Analysis of Reasoning, Performance, and Cost of Negotiation in Large Language Models. [arXiv preprint arXiv:2510.08098](https://arxiv.org/abs/2510.08098)
+> Schlangen, D., Hakimov, S., Jordan, J., Sadler, P. (2026). A Third Paradigm for LLM Evaluation: Dialogue Game-Based Evaluation using clembench [arxiv preprint arxiv:2507.08491](https://arxiv.org/abs/2507.08491)
 
-> Schlangen, D., Hakimov, S., Jordan, J., Sadler, P. (2025). A Third Paradigm for LLM Evaluation: Dialogue Game-Based Evaluation using clembench [arxiv preprint arxiv:2507.08491](https://arxiv.org/abs/2507.08491)
+> Hakimov S, Bernard R, Leiber T, Osswald K, Richert K, Yang R, Bernardi R, Schlangen D. (2026). The Price of Thought: A Multilingual Analysis of Reasoning, Performance, and Cost of Negotiation in Large Language Models. In Findings of the Association for Computational Linguistics: EACL 2026. [PDF](https://aclanthology.org/2026.findings-eacl.27/) DOI: [10.18653/v1/2026.findings-eacl.27](https://doi.org/10.18653/v1/2026.findings-eacl.27)
 
 
 
