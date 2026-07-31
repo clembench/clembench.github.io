@@ -98,6 +98,18 @@ table.clb-table th.clb-sorted.clb-desc::after { content: " \25BC"; }
 table.clb-table th:first-child,
 table.clb-table td:first-child { text-align: left; }
 table.clb-table tbody tr:hover { background: var(--clb-bg-soft); }
+
+/* Frozen first column for the wide grids (games, fertility, cost).
+   The header row is already sticky, so the top-left cell needs to sit above
+   both and each sticky cell needs its own background — a transparent one would
+   let the scrolling columns show through. */
+table.clb-table.clb-freeze th:first-child,
+table.clb-table.clb-freeze td:first-child {
+  position: sticky; left: 0; z-index: 1;
+  background: #fff; border-right: 1px solid var(--clb-line);
+}
+table.clb-table.clb-freeze th:first-child { z-index: 3; }
+table.clb-table.clb-freeze tbody tr:hover td:first-child { background: var(--clb-bg-soft); }
 .clb-rank { color: var(--clb-muted); font-variant-numeric: tabular-nums; width: 2rem; }
 .clb-model { font-weight: 600; }
 .clb-vendor { color: var(--clb-muted); font-weight: 400; font-size: .82rem; }

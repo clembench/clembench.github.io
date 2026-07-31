@@ -247,7 +247,7 @@
     }
     var games = Object.keys(D.caps.game_names);
     var wrap = el("div", "clb-tablewrap");
-    var t = el("table", "clb-table");
+    var t = el("table", "clb-table clb-freeze");
     var hr = el("tr");
     hr.appendChild(el("th", null, "Model"));
     games.forEach(function (g) { hr.appendChild(el("th", null, D.caps.game_names[g])); });
@@ -302,7 +302,7 @@
     // fertility heatmap
     host.appendChild(el("h3", null, "Token fertility (tokens per word)"));
     var wrap = el("div", "clb-tablewrap");
-    var t = el("table", "clb-table");
+    var t = el("table", "clb-table clb-freeze");
     var hr = el("tr"); hr.appendChild(el("th", null, "Model"));
     shown.forEach(function (c) { hr.appendChild(el("th", null, c)); });
     var thead = el("thead"); thead.appendChild(hr); t.appendChild(thead);
@@ -330,9 +330,9 @@
     // cost + value
     host.appendChild(el("h3", null, "Cost and value"));
     var cw = el("div", "clb-tablewrap");
-    var ct = el("table", "clb-table");
+    var ct = el("table", "clb-table clb-freeze");
     var chr = el("tr");
-    ["Model", "Total cost (USD)", "Input tokens", "Output tokens", "clemscore", "Points per $"]
+    ["Model", "Total cost (USD)", "Input tokens", "Output tokens"]
       .forEach(function (h) { chr.appendChild(el("th", null, h)); });
     var cth = el("thead"); cth.appendChild(chr); ct.appendChild(cth);
     var ctb = el("tbody");
@@ -343,14 +343,11 @@
       var cost = rows.reduce(function (s, r) { return s + (num(r.total_cost) || 0); }, 0);
       var ti = rows.reduce(function (s, r) { return s + (num(r.input_tokens) || 0); }, 0);
       var to = rows.reduce(function (s, r) { return s + (num(r.output_tokens) || 0); }, 0);
-      var a = agg(rowsFor(m.model));
       var tr = el("tr");
       tr.appendChild(el("td", "clb-model", m.model));
       tr.appendChild(el("td", "clb-num", cost ? cost.toFixed(2) : "–"));
       tr.appendChild(el("td", "clb-num", ti ? ti.toLocaleString() : "–"));
       tr.appendChild(el("td", "clb-num", to ? to.toLocaleString() : "–"));
-      tr.appendChild(el("td", "clb-num", a ? fmt(a.clemscore) : "–"));
-      tr.appendChild(el("td", "clb-num", (a && cost) ? (a.clemscore / cost).toFixed(2) : "–"));
       ctb.appendChild(tr);
     });
     ct.appendChild(ctb); cw.appendChild(ct); host.appendChild(cw);
