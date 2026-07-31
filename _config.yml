@@ -39,6 +39,7 @@ show_excerpts: true
 # Navigation: explicitly list header pages so HTML app pages stay out of nav
 header_pages:
   - leaderboard.markdown
+  - previous-benchmarks.markdown
   - llm_calculator.markdown
   - related.markdown
   - contributors.markdown

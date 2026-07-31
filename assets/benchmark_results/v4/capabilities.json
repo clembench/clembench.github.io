@@ -1,0 +1,44 @@
+{
+  "clusters": {
+    "Lexical & world knowledge": [
+      "taboo",
+      "codenames",
+      "wordle"
+    ],
+    "Grounded reference": [
+      "referencegame",
+      "imagegame"
+    ],
+    "Discourse & grounding": [
+      "guesswhat",
+      "matchit_ascii",
+      "privateshared"
+    ],
+    "Strategic & social": [
+      "dond",
+      "hot_air_balloon",
+      "clean_up"
+    ],
+    "Spatial reasoning": [
+      "textmapworld",
+      "textmapworld_graphreasoning",
+      "textmapworld_specificroom"
+    ]
+  },
+  "game_names": {
+    "clean_up": "Clean Up",
+    "codenames": "Codenames",
+    "dond": "Deal or No Deal",
+    "guesswhat": "GuessWhat",
+    "hot_air_balloon": "Hot Air Balloon",
+    "imagegame": "Image Game",
+    "matchit_ascii": "Match-It",
+    "privateshared": "Private & Shared",
+    "referencegame": "Reference Game",
+    "taboo": "Taboo",
+    "textmapworld": "TextMapWorld",
+    "textmapworld_graphreasoning": "TextMapWorld (Graph)",
+    "textmapworld_specificroom": "TextMapWorld (Room)",
+    "wordle": "Wordle"
+  }
+}

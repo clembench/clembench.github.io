@@ -1,0 +1,152 @@
+[
+  {
+    "code": "ar",
+    "name": "Arabic",
+    "group": "Other"
+  },
+  {
+    "code": "bg",
+    "name": "Bulgarian",
+    "group": "EU-24"
+  },
+  {
+    "code": "cs",
+    "name": "Czech",
+    "group": "EU-24"
+  },
+  {
+    "code": "da",
+    "name": "Danish",
+    "group": "EU-24"
+  },
+  {
+    "code": "de",
+    "name": "German",
+    "group": "EU-24"
+  },
+  {
+    "code": "el",
+    "name": "Greek",
+    "group": "EU-24"
+  },
+  {
+    "code": "en",
+    "name": "English",
+    "group": "EU-24"
+  },
+  {
+    "code": "es",
+    "name": "Spanish",
+    "group": "EU-24"
+  },
+  {
+    "code": "et",
+    "name": "Estonian",
+    "group": "EU-24"
+  },
+  {
+    "code": "fi",
+    "name": "Finnish",
+    "group": "EU-24"
+  },
+  {
+    "code": "fr",
+    "name": "French",
+    "group": "EU-24"
+  },
+  {
+    "code": "ga",
+    "name": "Irish",
+    "group": "EU-24"
+  },
+  {
+    "code": "hr",
+    "name": "Croatian",
+    "group": "EU-24"
+  },
+  {
+    "code": "hu",
+    "name": "Hungarian",
+    "group": "EU-24"
+  },
+  {
+    "code": "it",
+    "name": "Italian",
+    "group": "EU-24"
+  },
+  {
+    "code": "lt",
+    "name": "Lithuanian",
+    "group": "EU-24"
+  },
+  {
+    "code": "lv",
+    "name": "Latvian",
+    "group": "EU-24"
+  },
+  {
+    "code": "mt",
+    "name": "Maltese",
+    "group": "EU-24"
+  },
+  {
+    "code": "nl",
+    "name": "Dutch",
+    "group": "EU-24"
+  },
+  {
+    "code": "pl",
+    "name": "Polish",
+    "group": "EU-24"
+  },
+  {
+    "code": "pt",
+    "name": "Portuguese",
+    "group": "EU-24"
+  },
+  {
+    "code": "ro",
+    "name": "Romanian",
+    "group": "EU-24"
+  },
+  {
+    "code": "ru",
+    "name": "Russian",
+    "group": "Other"
+  },
+  {
+    "code": "sk",
+    "name": "Slovak",
+    "group": "EU-24"
+  },
+  {
+    "code": "sl",
+    "name": "Slovenian",
+    "group": "EU-24"
+  },
+  {
+    "code": "sr",
+    "name": "Serbian",
+    "group": "Other"
+  },
+  {
+    "code": "sv",
+    "name": "Swedish",
+    "group": "EU-24"
+  },
+  {
+    "code": "tr",
+    "name": "Turkish",
+    "group": "Other"
+  },
+  {
+    "code": "uk",
+    "name": "Ukrainian",
+    "group": "Other"
+  },
+  {
+    "code": "zh",
+    "name": "Chinese",
+    "group": "Other"
+  }
+]

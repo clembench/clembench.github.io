@@ -1,0 +1,52 @@
+[
+  {
+    "model": "gpt-5.4",
+    "vendor": "OpenAI",
+    "open_weight": false
+  },
+  {
+    "model": "claude-opus-4.8",
+    "vendor": "Anthropic",
+    "open_weight": false
+  },
+  {
+    "model": "glm-5.2",
+    "vendor": "Z.ai",
+    "open_weight": true
+  },
+  {
+    "model": "deepseek-v4-pro",
+    "vendor": "DeepSeek",
+    "open_weight": true
+  },
+  {
+    "model": "nemotron-3-ultra-550b",
+    "vendor": "NVIDIA",
+    "open_weight": true,
+    "parameters": "550B-A55B"
+  },
+  {
+    "model": "gemma-4-26b",
+    "vendor": "Google",
+    "open_weight": true,
+    "parameters": "26B-A4B"
+  },
+  {
+    "model": "qwen3.6-35b",
+    "vendor": "Alibaba",
+    "open_weight": true,
+    "parameters": "35B-A3B"
+  },
+  {
+    "model": "mistral-large-3-675b",
+    "vendor": "Mistral",
+    "open_weight": true,
+    "parameters": "675B"
+  },
+  {
+    "model": "apertus-1.5-8b",
+    "vendor": "Swiss AI",
+    "open_weight": true,
+    "parameters": "8B"
+  }
+]
