@@ -33,6 +33,36 @@
   }
   function num(v) { var n = parseFloat(v); return isFinite(n) ? n : null; }
 
+  /* ── model names ────────────────────────────────────────────────── */
+  /* The CSVs come straight out of the benchmark pipeline, which names a model
+     after its run folder ("gpt-5.4-azure", "Apertus-v1.5-8B") or its plotting
+     label ("Claude", "Qwen 3.6"), while models.json carries one canonical name
+     each. Without a mapping, only the models whose folder name happens to equal
+     the canonical name — glm-5.2 and deepseek-v4-pro — survive the join, and
+     every other row is silently dropped. Normalise on load instead, so that
+     recopying the CSVs cannot empty the board again. */
+  var MODEL_ALIAS = {
+    "gpt-5.4-azure": "gpt-5.4",
+    "claude-opus-4-8-azure": "claude-opus-4.8",
+    "claude": "claude-opus-4.8",
+    "nemotron-3-ultra": "nemotron-3-ultra-550b",
+    "nemotron 3 ultra": "nemotron-3-ultra-550b",
+    "gemma-4-26b-a4b-it": "gemma-4-26b",
+    "gemma 4 26b-a4b": "gemma-4-26b",
+    "qwen3.6-35b-a3b-fp8-without-reasoning": "qwen3.6-35b",
+    "qwen3.6-35b-a3b-fp8": "qwen3.6-35b",
+    "qwen 3.6": "qwen3.6-35b",
+    "mistral-large-3-azure": "mistral-large-3-675b",
+    "mistral large 3": "mistral-large-3-675b",
+    "apertus-v1.5-8b": "apertus-1.5-8b",
+    "deepseek-v4": "deepseek-v4-pro"
+  };
+  function canonModel(name) {
+    if (!name) return "";
+    var k = String(name).trim().toLowerCase();
+    return MODEL_ALIAS[k] || k;
+  }
+
   /* ── aggregation ────────────────────────────────────────────────── */
   // Per language, clemscore is mean(%Played) x mean(Quality) across that
   // language's games; the model score is then the mean of those per-language
@@ -413,9 +443,17 @@
       get("models.json", true), get("languages.json", true), get("capabilities.json", true)
     ]).then(function (r) {
       D.rows = parseCSV(r[0]);
-      D.rows.forEach(function (x) { x._p = num(x.played); x._q = num(x.quality); });
+      D.rows.forEach(function (x) {
+        x.model = canonModel(x.model); x._p = num(x.played); x._q = num(x.quality);
+      });
       D.cost = parseCSV(r[1]);
+      // cost_by_language.csv has no `model` column at all — it carries
+      // model_folder and model_label — so the join key has to be built here.
+      D.cost.forEach(function (x) {
+        x.model = canonModel(x.model_folder || x.model_label || x.model);
+      });
       D.fert = parseCSV(r[2]);
+      D.fert.forEach(function (x) { x.model = canonModel(x.model); });
       D.models = r[3]; D.langs = r[4]; D.caps = r[5];
 
       if (!S.langs.size) S.langs = new Set(D.langs.map(function (l) { return l.code; }));
