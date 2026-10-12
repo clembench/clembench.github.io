@@ -30,8 +30,7 @@ categories: jekyll update -->
 
 > Hakimov S, Bernard R, Leiber T, Osswald K, Richert K, Yang R, Bernardi R, Schlangen D. (2026). The Price of Thought: A Multilingual Analysis of Reasoning, Performance, and Cost of Negotiation in Large Language Models. In Findings of the Association for Computational Linguistics: EACL 2026. [PDF](https://aclanthology.org/2026.findings-eacl.27/) DOI: [10.18653/v1/2026.findings-eacl.27](https://doi.org/10.18653/v1/2026.findings-eacl.27)
 
-
-
+> Hakimov, S., Osswald, K., Psurek, J., Bukovszky, E., Lüser, A., Schlangen, D. (2026). Language Equality has a Price: A Systematic Investigation of Multi-turn LLM Performance for EU-24+. [arXiv preprint](https://arxiv.org/abs/2608.01395)
 
 <div class='iframe-video'>
     <iframe 
@@ -41,7 +40,6 @@ categories: jekyll update -->
         allow="autoplay">
     </iframe>
 </div>
-
 
 There are currently two main paradigms for evaluating LLMs: *reference-based* evaluation looks at the performance at well-defined single-shot tasks like question answering or summarisation; while *preference-based* evaluation asks users to interact with such two such models (each interfaced as a potentially multi-turn chatbot) in parallel and to judge which one "performs better".
 
